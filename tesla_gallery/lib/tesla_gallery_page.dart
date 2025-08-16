@@ -18,7 +18,7 @@ class _TeslaGalleryPageState extends State<TeslaGalleryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(isModelY ? "Tesla Model Y" : "Tesla Model 3"),
+        title: Center(child: Text(isModelY ? "Tesla Model Y" : "Tesla Model 3")),
         backgroundColor: Colors.grey[300],
       ),
       body: InfiniteScrollableGallery(isModelY: isModelY),
