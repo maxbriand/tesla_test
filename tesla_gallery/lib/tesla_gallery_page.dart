@@ -21,15 +21,34 @@ class _TeslaGalleryPageState extends State<TeslaGalleryPage> {
         backgroundColor: Colors.grey[300],
       ),
       body: InfiniteScrollableGallery(isModelY: isModelY),
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: IconButton(
         onPressed: () {
           setState(() {
             isModelY = !isModelY;
           });
         },
-        backgroundColor: isModelY ? Colors.blue[600] : Colors.grey[300],
-        foregroundColor: isModelY ? Colors.white : Colors.grey[600],
-        child: Icon(isModelY ? Icons.toggle_on : Icons.toggle_off, size: 30),
+        icon: Stack(
+          alignment: Alignment.center,
+          children: [
+            Icon(
+              isModelY ? Icons.toggle_off : Icons.toggle_on,
+              size: 80,
+              color: Colors.white,
+              shadows: [
+                Shadow(
+                  color: Colors.black.withValues(alpha: 2),
+                  offset: const Offset(0, 2),
+                  blurRadius: 5,
+                ),
+              ],  
+            ),
+            Icon(
+              isModelY ? Icons.toggle_on : Icons.toggle_off,
+              size: 80,
+              color: isModelY ? Colors.blue[600] : Colors.grey[600],
+            ),
+          ],
+        ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
