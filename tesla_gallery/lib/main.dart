@@ -5,6 +5,7 @@ void main() {
   runApp(const MyApp());
 }
 
+// The many entry point will launch the Testa Gallery Page as home screen
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 

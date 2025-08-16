@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 
+/// Fetches images from Unsplash based on the Tesla model type and page number.
 Future<List<String>> getImagesFromUnsplash(String keyword, int page) async {
   final options = BaseOptions(
     baseUrl: 'https://api.unsplash.com',

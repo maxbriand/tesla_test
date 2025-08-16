@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tesla_gallery/infinite_scrollable_gallery.dart';
 
+// The TeslaGalleryPage define the home layout of the app
 class TeslaGalleryPage extends StatefulWidget {
   const TeslaGalleryPage({super.key, required this.title});
 

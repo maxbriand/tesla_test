@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tesla_gallery/get_images_from_unsplash.dart';
 
+// The InfiniteScrollableGallery widget displays a grid of Tesla images
 class InfiniteScrollableGallery extends StatefulWidget {
   final bool isModelY;
 
