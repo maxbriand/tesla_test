@@ -1,5 +1,5 @@
 # tesla_test
-Develop a tesla pic galery in less 6 hours using Flutter
+Develop a Tesla pic gallery in less than 6 hours using Flutter
 
 # How to launch it?
 1) Open your terminal
