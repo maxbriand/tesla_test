@@ -11,11 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // title: 'Tesla Gallery',
+      title: 'Tesla Gallery',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       home: const TeslaGalleryPage(title: 'Tesla Gallery'),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
